@@ -41,16 +41,7 @@ def depth_first_search(graph, start, goal):
 from collections import deque
 
 def breadth_first_search(graph, start, goal):
-    """
-    Breadth First Search (BFS) algorithm using Pythonic data structures.
-
-    Args:
-        graph: The graph class (must have methods: is_cell_in_bounds, 
-               check_collision, cell_to_idx, idx_to_cell, find_neighbors).
-        start: Start cell as a Cell object.
-        goal: Goal cell as a Cell object.
-    """
-
+    
     graph.init_graph()
     start_idx = graph.cell_to_idx(start.i, start.j)
     goal_idx = graph.cell_to_idx(goal.i, goal.j)
